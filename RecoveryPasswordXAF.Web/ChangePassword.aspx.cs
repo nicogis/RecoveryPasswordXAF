@@ -82,7 +82,7 @@ namespace RecoveryPasswordXAF.Web
                         Module.BusinessObjects.Database.ChangePassword changePassword = objectSpace.GetObjectByKey<Module.BusinessObjects.Database.ChangePassword>(tkGuid);
                         if (changePassword != null)
                         {
-                            if (DateTime.Now.Subtract(changePassword.DateRequest).TotalMinutes < 10)
+                            if (DateTime.Now.Subtract(changePassword.DateRequest).TotalMinutes < 10)  //minutes expire
                             {
                                 IAuthenticationStandardUser user = (IAuthenticationStandardUser)objectSpace.FindObject(WebApplication.Instance.Security.UserType, new BinaryOperator("UserName", changePassword.User));
                                 if (user != null)
