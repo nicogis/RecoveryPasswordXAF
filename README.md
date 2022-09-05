@@ -55,7 +55,7 @@ GO
 ****In RestorePasswordParameters you need set
     <br>- urlApp variable 
     <br>- SendMail method
-    <br>- change x minutes expire and body email (optional)****
+    <br>- body email (optional)****
 
 
 - In module.cs
