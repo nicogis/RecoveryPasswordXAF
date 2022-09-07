@@ -1,7 +1,7 @@
 ### This topic demonstrates how to extend your ASP.NET Web Forms application with recovery password
 
 Users recovery password setting email.
-If email exists the system sends email with link to reset password.
+If email exists, the system sends email with link to reset password.
 This link expires after 10 minutes.
 
 #### Follow these steps:
